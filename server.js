@@ -27,6 +27,10 @@ app.use('/products', productRoutes);
 import categoryRoutes from './routes/categories.js';
 app.use('/categories', categoryRoutes);
 
+import orderRoutes from './routes/orders.js';
+app.use('/orders', orderRoutes);
+
+
 // Test route
 app.get('/', (req, res) => {
   res.send('SmartShop API is running 🚀');
