@@ -5,7 +5,8 @@ const app = express();
 
 // Middleware to parse JSON
 app.use(express.json());
-
+//to acsses and use HTML and JavaScript and Css for the front end 
+app.use(express.static('FrontEnd'));
 
 // MongoDB connection string
 const uri = "mongodb+srv://smartshopuser:SmartShop123%21@smartshopcluster.xatpw3n.mongodb.net/smartshopDB?appName=SmartShopCluster";
